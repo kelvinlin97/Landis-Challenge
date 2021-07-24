@@ -7,13 +7,8 @@ const pool = new Pool({
   port: 5432,
 })
 
-const getAccounts = (req, res) => {
-  pool.query("SELECT data FROM accounts", (error, results) => {
-    if(error){
-      throw(error)
-    }
-    res.status(200).json(results.rows)
-  })
+const getAccounts = (callback) => {
+  pool.query("SELECT data FROM accounts", callback)
 }
 
 module.exports = {

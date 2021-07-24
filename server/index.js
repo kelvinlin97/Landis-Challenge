@@ -1,8 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 const path = require("path");
-const db = require('./server/queries')
 
 //Body Parsing Middleware
 app.use(express.json());
@@ -17,11 +16,11 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).send(err.message || "Internal server error");
 });
 
-app.get('/', (request, response) => {
-  response.json({ info: 'Node.js, Express, and Postgres API' })
-})
+app.use('/api', require('./api'));
 
-app.get('/accounts', db.getAccounts)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
