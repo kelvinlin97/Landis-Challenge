@@ -5,15 +5,13 @@ import ReactTooltip from "react-tooltip";
 const AccountCard = (props) => {
   const account = props.account.data;
   const strNumber = JSON.stringify(account.phone)
-  const phoneNumber = strNumber.slice(0, 3) + '-' + strNumber.slice(3, 6) + '-' + strNumber.slice(6, strNumber.length)
+  const phoneNumber = '(' + strNumber.slice(0, 3) + ')-' + strNumber.slice(3, 6) + '-' + strNumber.slice(6, strNumber.length)
   const indicateMortgage = props.indicateMortgage;
   const mortgageReadiness = indicateMortgage(account.credit, account.balance)
   return (
-    <div>
       <Card
         bg='primary'
         text='white'
-        style={{ width: '14rem' }}
         id="container-card"
       >
         <Card.Body id="card-body">
@@ -31,7 +29,6 @@ const AccountCard = (props) => {
           </ReactTooltip>
         </Card.Body>
       </Card>
-    </div>
   )
 }
 

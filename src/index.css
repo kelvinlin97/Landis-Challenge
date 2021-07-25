@@ -8,6 +8,11 @@ body {
   background-color: #32325d;
   text-shadow: 0.3px 0.3px black;
   max-height: 100%;
+  display: flex;
+}
+
+#root {
+  width: 100%;
 }
 
 code {
@@ -17,6 +22,7 @@ code {
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
+  display: flex;
 }
 
 #landis-logo {
@@ -27,38 +33,33 @@ code {
 #sideNavbar {
   float: left;
   height: 100%;
-  min-width: 150px;
-  max-width: 250px;
   margin-right: 15px;
   display: block;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  top: 0%;
   background-color: #fff;
   position: absolute;
-  top: 0px;
-  overflow: hidden;
   border: #2e8baf solid 1px;
   box-shadow: inset 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 3px hs1(0, 0%, 90%);
 }
 
+#container {
+  width: 100%;
+}
+
 #container-card {
   display: flex;
+  width: 14rem;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 1vh 1vw;
-  margin: 1vh 1vw;
-  border: #2e8baf solid 3px;
-  max-width: 100%;
+  border: #8EA8C3 solid 3px;
   box-shadow: inset 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 3px hs1(0, 0%, 90%);
-  background-color: #313073;
+  background-color: #F4F6F5;
   margin-left: 300px;
   text-align: center;
-}
-
-#container {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 #card-image {
@@ -68,10 +69,6 @@ code {
   margin-bottom: 10px;
   margin-right: 5%;
   justify-content: center;
-}
-
-#card-body {
-  margin-left: 8%;
 }
 
 #card-title {
