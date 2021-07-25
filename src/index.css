@@ -75,7 +75,7 @@ code {
   background-color: #F4F6F5;
   text-align: center;
   justify-content: center;
-  margin-left: 160px;
+  margin-left: 110px;
   margin-bottom: 10px;
   margin-top: 50px;
 }
@@ -129,3 +129,24 @@ code {
   font-size: 28px;
   color: #078809;
 }
+
+.links {
+  text-decoration: none;
+  margin-top: 500px;
+}
+
+.links:hover {
+  color: hotpink;
+}
+
+
+#sidebar-links {
+  list-style-type: none;
+}
+
+.icon {
+  margin-top: 30px;
+  height: 35px;
+  width: 30px;
+}
+
