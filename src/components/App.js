@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import {
   BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom";
@@ -7,8 +8,8 @@ import Analytics from './Analytics'
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
+        <nav id="sideNavbar">
+          <img id="landis-logo" src="https://i.imgur.com/2EWStos.png"/>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -29,7 +30,6 @@ function App() {
           <Route path="/" component={Accounts}>
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
