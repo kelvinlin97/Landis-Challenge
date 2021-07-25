@@ -48,6 +48,22 @@ code {
   margin-left: 200px;
 }
 
+.chart-container {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 80px;
+  height: 40vh;
+  width: 30vw;
+}
+
+.plot-container {
+  position: relative;
+  margin-top: -150px;
+  margin-left: 550px;
+  height: 60vh;
+  width: 40vw;
+}
+
 #container-card {
   display: flex;
   width: 12rem;
@@ -59,9 +75,24 @@ code {
   background-color: #F4F6F5;
   text-align: center;
   justify-content: center;
-  margin-left: 40px;
+  margin-left: 160px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+
+#container-stats {
+  display: flex;
+  width: 12rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1vh 1vw;
+  background-color: #F4F6F5;
+  text-align: center;
+  justify-content: center;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 #card-image {
@@ -87,4 +118,14 @@ code {
 
 #row {
   flex-wrap: wrap;
+}
+
+#card-balance-title {
+  font-size: 28px;
+  color: #00CCA7;
+}
+
+#card-credit-title {
+  font-size: 28px;
+  color: #078809;
 }
