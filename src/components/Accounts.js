@@ -25,16 +25,16 @@ class Accounts extends React.Component {
   render() {
     let accounts = this.props.accounts;
     return (
-      <Container>
-      <Row xs={1} md={2} className="g-4">
+      <Container fluid={true} id="container">
+      <Row md={4} id="row" style={{ display: "flex"}}>
         {accounts.map((account, index) => {
           return (
-            <Col class="col-md-3">
+            <Col xs={6}>
             <AccountCard account={account} indicateMortgage={this.indicateMortgage} key={index}/>
             </Col>
           )
         })}
-      </Row>
+        </Row>
       </Container>
     )
   }
