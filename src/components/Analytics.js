@@ -2,7 +2,9 @@ import React from 'react'
 
 class Analytics extends React.Component {
   render(){
-    return 'hi'
+    return (
+      'hi'
+    )
   }
 }
 
