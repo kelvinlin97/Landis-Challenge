@@ -1,6 +1,6 @@
-# Landis Coding Challenge
+# Mortgage Loan Tracker
 
-Project built for Landis' Coding Challenge. Click [here](https://imgur.com/a/Q34MfCf) for a quick view of the application. 
+Mock application built using Postgresql JSONL database. Application identifies consumers in database and their likelihood of receiving a mortgage loan.
 
 # Setup
 1. Fork and clone repo
